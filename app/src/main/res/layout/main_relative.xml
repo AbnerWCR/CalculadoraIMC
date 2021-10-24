@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/calculaBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/botao_calcular"
+        style="@style/button_ok"/>
+
+    <TextView
+        android:id="@+id/tituloTXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/calculaBTN"
+        android:layout_toEndOf="@+id/calculaBTN"
+        android:text="@string/titulo_aplicacao"
+        android:layout_centerHorizontal="true"
+        style="@style/title" />
+
+    <TextView
+        android:id="@+id/subtituloTXT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/pesoEDT"
+        android:text="@string/subtitulo_aplicacao"
+        style="@style/subtitle"/>
+
+    <EditText
+        android:id="@+id/pesoEDT"
+        style="@style/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/peso"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/alturaEDT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/pesoEDT"
+        android:hint="@string/altura"
+        android:inputType="numberDecimal"
+        style="@style/input" />
+
+
+
+</RelativeLayout>
