@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">imc-app</string>
+    <string name="ola_mundo">Olá Mundo!</string>
+    <string name="apresentacao">Meu nome é:</string>
+    <string name="nome">Abner</string>
+    <string name="titulo_aplicacao"> Calculadora IMC </string>
+    <string name="subtitulo_aplicacao"> Calculo do Índice de Massa Corporal </string>
+    <string name="peso"> Digite o seu peso em Kg </string>
+    <string name="altura"> Digite a sua altura em metros </string>
 </resources>
