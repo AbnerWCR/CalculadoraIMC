@@ -13,4 +13,12 @@
     <color name="color_03">#f4b862</color>
     <color name="color_04">#cc6b4a</color>
     <color name="color_05">#410c06</color>
+    <color name="color_06">#7ae2e3</color>
+    <color name="color_07">#624933</color>
+    <color name="color_button_ok">#DF08B80F</color>
+    <color name="pastel_pallet01">#E3D2F4</color>
+    <color name="pastel_pallet02">#AFDEFA</color>
+    <color name="pastel_pallet03">#BDF6E3</color>
+    <color name="pastel_pallet04">#FBF5C5</color>
+    <color name="pastel_pallet05">#FFD1D0</color>
 </resources>

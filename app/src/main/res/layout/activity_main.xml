@@ -6,10 +6,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center_horizontal"
+    android:gravity="center"
     tools:context=".MainActivity">
 
     <TextView
+      android:id="@+id/tituloTXT"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:text="@string/titulo_aplicacao"
@@ -20,6 +21,7 @@
       style="@style/title" />
 
     <TextView
+      android:id="@+id/subtituloTXT"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:text="@string/subtitulo_aplicacao"
@@ -30,9 +32,26 @@
       style="@style/subtitle"/>
 
     <EditText
+        android:id="@+id/pesoEDT"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/peso"
-        style="@style/input"/>
+        android:inputType="numberDecimal"
+        style="@style/input" />
 
-  </LinearLayout>
+    <EditText
+        android:id="@+id/alturaEDT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/altura"
+        android:inputType="numberDecimal"
+        style="@style/input" />
+
+    <Button
+        android:id="@+id/calculaBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/botao_calcular"
+        style="@style/button_ok"/>
+
+</LinearLayout>
