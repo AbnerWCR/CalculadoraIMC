@@ -1,57 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:gravity="center"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
-      android:id="@+id/tituloTXT"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="@string/titulo_aplicacao"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintLeft_toLeftOf="parent"
-      app:layout_constraintRight_toRightOf="parent"
-      app:layout_constraintTop_toTopOf="parent"
-      style="@style/title" />
+        android:id="@+id/tituloTXT"
+        style="@style/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo_aplicacao"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-      android:id="@+id/subtituloTXT"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:text="@string/subtitulo_aplicacao"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintLeft_toLeftOf="parent"
-      app:layout_constraintRight_toRightOf="parent"
-      app:layout_constraintTop_toTopOf="parent"
-      style="@style/subtitle"/>
+        android:id="@+id/subtituloTXT"
+        style="@style/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/subtitulo_aplicacao"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/pesoEDT"
-        android:layout_width="match_parent"
+        style="@style/input"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="@string/peso"
-        android:inputType="numberDecimal"
-        style="@style/input" />
+        android:inputType="numberDecimal" />
 
     <EditText
         android:id="@+id/alturaEDT"
-        android:layout_width="match_parent"
+        style="@style/input"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="@string/altura"
-        android:inputType="numberDecimal"
-        style="@style/input" />
+        android:inputType="numberDecimal" />
 
     <Button
         android:id="@+id/calculaBTN"
+        style="@style/button_ok"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/botao_calcular"
-        style="@style/button_ok"/>
+        android:text="@string/botao_calcular" />
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
