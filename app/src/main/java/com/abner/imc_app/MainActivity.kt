@@ -2,6 +2,7 @@ package com.abner.imc_app
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.core.widget.doAfterTextChanged
 import androidx.core.widget.doOnTextChanged
@@ -22,17 +23,17 @@ class MainActivity : AppCompatActivity() {
             //tituloTXT?.text = text
         }
         calcularBTN?.setOnClickListener{
-            calcularIMC(pesoEDT.toString(), alturaEDT.toString())
+            calcularIMC(pesoEDT.text.toString(), alturaEDT.text.toString())
         }
     }
 
     private fun calcularIMC(peso: String, altura: String) {
-        val peso = peso.toFloatOrNull()
-        val altura = altura.toFloatOrNull()
+        val peso2 : Float? = peso.toFloatOrNull()
+        val altura2 : Float?  = altura.toFloatOrNull()
 
-        if (peso != null && altura != null) {
-            val imc = peso / (altura * altura)
-            tituloTXT?.text = "Seu IMC é "
+        if (peso2 != null && altura2 != null) {
+            val imc = peso2 / (altura2 * altura2)
+            tituloTXT.text = "Seu IMC é \n%.2f".format(imc)
         }
     }
 }
