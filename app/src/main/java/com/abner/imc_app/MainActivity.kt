@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
 
         if (peso != null && altura != null) {
             val imc = peso / (altura * altura)
-            tituloTXT.text = "Seu IMC é \n%.2f)".format(imc)
+            tituloTXT?.text = "Seu IMC é "
         }
     }
 }
