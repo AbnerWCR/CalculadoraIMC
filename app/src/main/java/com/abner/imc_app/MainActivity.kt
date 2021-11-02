@@ -25,6 +25,11 @@ class MainActivity : AppCompatActivity() {
         calcularBTN?.setOnClickListener{
             calcularIMC(pesoEDT.text.toString(), alturaEDT.text.toString())
         }
+        limparBTN?.setOnClickListener{
+            limparCampos()
+        }
+
+
     }
 
     private fun calcularIMC(peso: String, altura: String) {
@@ -35,5 +40,11 @@ class MainActivity : AppCompatActivity() {
             val imc = peso2 / (altura2 * altura2)
             tituloTXT.text = "Seu IMC é \n%.2f".format(imc)
         }
+    }
+
+    private fun limparCampos() {
+        pesoEDT?.text = null
+        alturaEDT?.text = null
+        tituloTXT?.text = "IMC"
     }
 }

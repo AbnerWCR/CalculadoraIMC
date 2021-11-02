@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">imc-app</string>
+    <string name="app_name">Calculadora IMC</string>
     <string name="ola_mundo">Olá Mundo!</string>
     <string name="apresentacao">Meu nome é:</string>
     <string name="nome">Abner</string>
@@ -8,4 +8,5 @@
     <string name="peso"> peso (ex: 65 Kg) </string>
     <string name="altura"> altura (ex: 1.83m) </string>
     <string name="botao_calcular">Calcular</string>
+    <string name="botao_limpar">Limpar</string>
 </resources>
