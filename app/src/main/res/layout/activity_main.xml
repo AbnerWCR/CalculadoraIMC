@@ -20,7 +20,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.05" />
+        app:layout_constraintVertical_bias="0.02" />
 
     <TextView
         android:id="@+id/subtituloTXT"
@@ -36,6 +36,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tituloTXT"
         app:layout_constraintVertical_bias="0" />
+
+    <TextView
+        android:id="@+id/alertaTXT"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/alert"
+        android:text="@string/alerta_aplicacao"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subtituloTXT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.05"
+        app:flow_horizontalBias="0.5"/>
 
     <EditText
         android:id="@+id/pesoEDT"

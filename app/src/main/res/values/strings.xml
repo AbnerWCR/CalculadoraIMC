@@ -5,6 +5,7 @@
     <string name="nome">Abner</string>
     <string name="titulo_aplicacao">IMC </string>
     <string name="subtitulo_aplicacao"> Calculo do Índice de Massa Corporal </string>
+    <string name="alerta_aplicacao"> alerta interpretação imc </string>
     <string name="peso"> peso (ex: 65 Kg) </string>
     <string name="altura"> altura (ex: 1.83m) </string>
     <string name="botao_calcular">Calcular</string>
