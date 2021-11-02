@@ -12,7 +12,7 @@
     <TextView
         android:id="@+id/tituloTXT"
         style="@style/title"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/titulo_aplicacao"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -20,12 +20,12 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.1" />
+        app:layout_constraintVertical_bias="0.05" />
 
     <TextView
         android:id="@+id/subtituloTXT"
         style="@style/subtitle"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/subtitulo_aplicacao"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -40,9 +40,8 @@
     <EditText
         android:id="@+id/pesoEDT"
         style="@style/input"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
         android:hint="@string/peso"
         android:inputType="numberDecimal"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -55,16 +54,15 @@
     <EditText
         android:id="@+id/alturaEDT"
         style="@style/input"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
         android:hint="@string/altura"
         android:inputType="numberDecimal"
         app:layout_constraintTop_toBottomOf="@+id/pesoEDT"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintVertical_bias="0.02"
         tools:layout_editor_absoluteX="102dp" />
 
     <Button
@@ -78,7 +76,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintVertical_bias="0.9"
+        app:layout_constraintVertical_bias="0.95"
         tools:layout_editor_absoluteX="121dp" />
 
     <androidx.constraintlayout.widget.Guideline
